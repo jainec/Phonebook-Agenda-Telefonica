@@ -1,9 +1,3 @@
-/*       PROJETO DE P.I.
-    INTEGRANTES DO GRUPO:
-    JAINE DA CONCEICAO SANTOS
-    CAROLINE DE OLIVEIRA CRUZ SANTOS
-    MARCOS FELIPE AMARAL SENA
-*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -161,7 +155,7 @@ void carregaArquivo(){
 }
 
 //busca binaria por nome nome e sobrenome para evitar duplicacoes na agenda
-//retorna um índice se o contato buscado for encontrado no array, retorna -1 caso contrario
+//retorna um Ã­ndice se o contato buscado for encontrado no array, retorna -1 caso contrario
 int buscaContato (char n[], char s[]){
     int e, m, d;     //e = esquerda, m = meio, d = direita
     e = 0; d = nroContatos-1;
@@ -187,7 +181,7 @@ int buscaContato (char n[], char s[]){
     return -1;
 }
 
-//retorna se os nomes e/ou sobrenomes não estiverem ordenados
+//retorna se os nomes e/ou sobrenomes nÃ£o estiverem ordenados
 int compare(char n1[], char n2[], char s1[], char s2[]){
     return strcmp(n1, n2) > 0 ||
             strcmp(n1, n2) == 0 &&
@@ -223,7 +217,7 @@ int buscaBinariaNome(char n[]) {
     return -1;
 }
 
-//verifica se o numero inserido satisfaz as condições impostas no projeto
+//verifica se o numero inserido satisfaz as condiÃ§Ãµes impostas no projeto
 //se satisfazer retorna 1, ao contrario retorna -1
 int validaNumero(char numero[]){
     int i, count = 0;
@@ -238,7 +232,7 @@ int validaNumero(char numero[]){
         return -1;
 }
 
-//verifica se o nome/sobrenome inserido satisfaz as condições impostas no projeto
+//verifica se o nome/sobrenome inserido satisfaz as condiÃ§Ãµes impostas no projeto
 //se satisfazer retorna 1, ao contrario retorna -1
 int validaNome(char nome[]){
     int i, count = 0;
@@ -257,7 +251,7 @@ int validaNome(char nome[]){
         return -1;
 }
 
-//verifica se o email inserido satisfaz as condições impostas no projeto
+//verifica se o email inserido satisfaz as condiÃ§Ãµes impostas no projeto
 //se satisfazer retorna 1, ao contrario retorna -1
 int validaEmail(char email[]){
     int i, count = 0, count2 = 0;
